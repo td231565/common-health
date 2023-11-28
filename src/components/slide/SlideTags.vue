@@ -11,7 +11,7 @@ const hashtags = ref([
 <template>
   <section class="main-breadcrumb">
     <div class="main-breadcrumb__tag">
-      <img src="../assets/play-angle.svg" alt="play" />
+      <img src="../../assets/play-angle.svg" alt="play" />
       <span>影音</span>
     </div>
     <span

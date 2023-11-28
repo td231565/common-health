@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import HeaderBanner from './components/HeaderBanner.vue'
-import HeaderNav from './components/HeaderNav.vue'
-import MainArticle from './components/MainArticle.vue'
-import MainBreadcrumb from './components/MainBreadcrumb.vue'
-import MainSlide from './components/MainSlide.vue'
+import HeaderBanner from './components/header/HeaderBanner.vue'
+import HeaderNav from './components/header/HeaderNav.vue'
+import MainSlide from './components/slide/MainSlide.vue'
 </script>
 
 <template>
@@ -13,8 +11,6 @@ import MainSlide from './components/MainSlide.vue'
   </header>
   <main>
     <MainSlide />
-    <MainBreadcrumb />
-    <MainArticle />
     <div class="main-banner"></div>
   </main>
 </template>
