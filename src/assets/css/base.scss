@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;900&display=swap');
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #222222;
+  text-align: justify;
+  background-color: #f9f8f7;
+  letter-spacing: 1px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 28px;
+}
