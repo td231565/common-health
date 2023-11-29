@@ -17,4 +17,13 @@
     color: #fff;
     background-color: #ff9122;
   }
+  &--primary {
+    color: #fff;
+    background-color: #ff9122;
+    border-color: #ff9122;
+    &:hover {
+      color: #ff9122;
+      background-color: #fff;
+    }
+  }
 }

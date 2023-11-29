@@ -35,10 +35,6 @@ const isShow = ref(false)
 </template>
 
 <style scoped lang="scss">
-a {
-  text-decoration: none;
-  color: #232323;
-}
 .menu-toggle {
   padding-top: 6px;
 }
