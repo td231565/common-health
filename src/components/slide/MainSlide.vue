@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useScreenStore } from '@/store/screen.ts'
-import ReadButton from '../common/CommonButton.vue'
+import CommonButton from '../common/CommonButton.vue'
 import SlideTags from './SlideTags.vue'
 // import { ref, onMounted } from 'vue'
 
@@ -37,7 +37,7 @@ const screenStore = useScreenStore()
       <SlideTags />
       <h1>疫情期間，癌症化療病人尿不出來又怕掛急診染疫，怎麼辦？</h1>
       <div class="flex justify-center items-center preview-area">
-        <ReadButton size="lg">立即閱讀</ReadButton>
+        <CommonButton size="lg">立即閱讀</CommonButton>
       </div>
     </div>
   </section>

@@ -7,8 +7,8 @@ defineExpose({ isSearchFocus })
 </script>
 
 <template>
-  <div class="menu-search" :class="{ focus: isSearchFocus }">
-    <select>
+  <div class="menu-search">
+    <select class="menu-search__select">
       <option value="">全部</option>
     </select>
     <div class="menu-search__input">
@@ -37,17 +37,14 @@ defineExpose({ isSearchFocus })
   border: 1px solid #dddddd;
   border-radius: 24px;
   overflow: hidden;
-  transition: all ease 0.4s;
   select,
   input {
     border: none;
   }
-  &.focus {
-    width: 100%;
-  }
-  select {
+  &__select {
     width: 106px;
     margin-right: 8px;
+    background-color: #fff;
   }
   &__input {
     display: flex;

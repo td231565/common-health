@@ -67,7 +67,7 @@ const isSearchFocus = computed(() => searchRef.value?.isSearchFocus)
       </div>
     </div>
     <div v-else class="flex items-center justify-between h-full">
-      <div style="width: calc(100% - 100px)">
+      <div class="mobile-search" :class="{ full: isSearchFocus }">
         <HeaderSearch ref="searchRef" />
       </div>
       <button v-if="!isSearchFocus" class="btn menu-btn--line">
@@ -105,5 +105,13 @@ const isSearchFocus = computed(() => searchRef.value?.isSearchFocus)
   padding: 0;
   border: 1px solid #07b53b;
   background-color: #07b53b;
+}
+
+.mobile-search {
+  width: calc(100% - 100px);
+  transition: all ease 0.4s;
+  &.full {
+    width: 100%;
+  }
 }
 </style>
