@@ -38,10 +38,12 @@ const hashtags = ref([
     border-radius: 12px;
     span {
       padding-left: 6px;
+      font-size: 14px;
     }
   }
   &__hashtag {
     padding-left: 12px;
+    font-size: 14px;
     color: #b38e5b;
   }
 }
