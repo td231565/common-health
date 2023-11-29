@@ -86,6 +86,7 @@ const isSearchFocus = computed(() => searchRef.value?.isSearchFocus)
   padding: 0 20px;
   background-color: #fff;
   box-shadow: 0 4px 4px #ddd;
+  z-index: 10;
   &.fixed {
     position: fixed;
     top: 0;
