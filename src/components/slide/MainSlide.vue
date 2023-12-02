@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getNews } from '@/api'
 import { useScreenStore } from '@/store/screen.ts'
-import { ref } from 'vue'
+import { defineAsyncComponent, ref } from 'vue'
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import CommonButton from '../common/CommonButton.vue'
@@ -14,8 +14,10 @@ const getNewsList = async () => {
   const { sources } = await getNews()
   newsList.value = sources
   if (!newsList.value) {
-    const testVal = import.meta.env.VITE_TEST
-    newsList.value = JSON.parse(testVal)
+    const { newsArr } = defineAsyncComponent(
+      () => import('@/composable/news.ts')
+    )
+    newsList.value = newsArr
   }
   newsList.value = newsList.value.map((item: Record<string, string>) => {
     if (item.description.length > 30) {
