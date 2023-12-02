@@ -22,3 +22,13 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 ```
 pnpm run dev
 ```
+
+## News API Key
+
+Replace `VITE_NEWS_API` value to your own api key in `/.env`, or just keep it.
+
+```
+// /.env
+
+VITE_NEWS_API = {your_news_api_key}
+```
